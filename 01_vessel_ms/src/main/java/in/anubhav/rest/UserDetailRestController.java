@@ -1,0 +1,46 @@
+package in.anubhav.rest;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.netflix.discovery.converters.Auto;
+
+import in.anubhav.jpa.entity.UserDetails;
+import in.anubhav.service.IUserService;
+import in.anubhav.service.event.UserDetailsEventService;
+
+@RestController
+public class UserDetailRestController {
+
+	private IUserService userService;
+
+	@Autowired
+	private UserDetailsEventService userEventService;
+
+	public UserDetailRestController(IUserService userService) {
+		super();
+		this.userService = userService;
+	}
+
+	@GetMapping("/records")
+	public ResponseEntity<List<UserDetails>> fetchAllRecord() {
+		return new ResponseEntity(userService.fetchAllRecord(), HttpStatus.OK);
+	}
+
+	@PostMapping("/add-record")
+	public UserDetails addRecord(@RequestBody UserDetails user) {
+		// event trigger
+		// kafka
+		UserDetails userData = userService.addUser(user);
+		userEventService.addMsg(userData);
+		return userData;
+	}
+
+}

@@ -1,0 +1,5 @@
+package in.anubhav.dto;
+
+public class UserDetails {
+
+}

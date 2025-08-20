@@ -1,0 +1,5 @@
+package in.anubhav.entity;
+
+public class UserDetails {
+
+}

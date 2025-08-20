@@ -1,0 +1,11 @@
+package in.anubhav.dto;
+
+import lombok.Data;
+
+@Data
+public class UserDetails {
+
+	private String name;
+	private Integer id;
+	private String phNo;
+}

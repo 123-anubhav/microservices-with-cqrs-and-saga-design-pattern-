@@ -1,0 +1,9 @@
+package in.anubhav;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import in.anubhav.dto.UserDetails;
+
+public interface IUserDetailsJ extends JpaRepository<UserDetails, Integer> {
+
+}

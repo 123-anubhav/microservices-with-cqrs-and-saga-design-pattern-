@@ -1,0 +1,22 @@
+package in.anubhav.service.event;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.kafka.core.KafkaTemplate;
+import org.springframework.stereotype.Service;
+
+import in.anubhav.constant.AppConstants;
+import in.anubhav.jpa.entity.UserDetails;
+
+@Service
+public class UserDetailsEventService {
+
+	@Autowired
+	private KafkaTemplate<String, UserDetails> kafkaTemplate;
+
+	public String addMsg(UserDetails user) {
+
+		// publish msg to kafka topic
+		kafkaTemplate.send(AppConstants.TOPIC, user);
+		return "Msg Published To Kafka Topic";
+	}
+}

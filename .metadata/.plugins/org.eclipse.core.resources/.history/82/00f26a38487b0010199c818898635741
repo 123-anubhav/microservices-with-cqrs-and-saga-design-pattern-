@@ -1,0 +1,11 @@
+package in.anubhav.service;
+
+import java.util.List;
+
+import in.anubhav.dto.UserDetailsDto;
+
+public interface IUserService {
+
+	UserDetailsDto addUser(UserDetailsDto user);
+	List<UserDetailsDto> fetchAllRecord();
+}

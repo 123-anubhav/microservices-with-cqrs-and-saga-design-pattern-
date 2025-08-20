@@ -1,0 +1,7 @@
+package in.anubhav;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface IUserDetailsJ extends JpaRepository<UserDetails, Integer> {
+
+}

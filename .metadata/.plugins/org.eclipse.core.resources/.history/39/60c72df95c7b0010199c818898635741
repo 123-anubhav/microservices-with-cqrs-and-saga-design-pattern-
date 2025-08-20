@@ -1,0 +1,200 @@
+2025-08-17T16:56:00.153+05:30  INFO 14072 --- [02_dashboard] [restartedMain] in.anubhav.Application                   : Starting Application using Java 17.0.12 with PID 14072 (C:\Users\anubh\Downloads\jitendra kafka real use case\02_dashboard\target\classes started by anubh in C:\Users\anubh\Downloads\jitendra kafka real use case\02_dashboard)
+2025-08-17T16:56:00.153+05:30  INFO 14072 --- [02_dashboard] [restartedMain] in.anubhav.Application                   : No active profile set, falling back to 1 default profile: "default"
+2025-08-17T16:56:00.317+05:30  INFO 14072 --- [02_dashboard] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-17T16:56:00.324+05:30  INFO 14072 --- [02_dashboard] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 1 JPA repository interface.
+2025-08-17T16:56:00.375+05:30  INFO 14072 --- [02_dashboard] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=807c99c8-004a-352d-9aeb-f8c3319e1185
+2025-08-17T16:56:01.350+05:30  INFO 14072 --- [02_dashboard] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 7979 (http)
+2025-08-17T16:56:01.351+05:30  INFO 14072 --- [02_dashboard] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-17T16:56:01.351+05:30  INFO 14072 --- [02_dashboard] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-17T16:56:01.369+05:30  INFO 14072 --- [02_dashboard] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-17T16:56:01.369+05:30  INFO 14072 --- [02_dashboard] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1213 ms
+2025-08-17T16:56:01.398+05:30  INFO 14072 --- [02_dashboard] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-17T16:56:01.399+05:30  INFO 14072 --- [02_dashboard] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-17T16:56:01.406+05:30  INFO 14072 --- [02_dashboard] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-17T16:56:01.407+05:30  INFO 14072 --- [02_dashboard] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2025-08-17T16:56:01.416+05:30  INFO 14072 --- [02_dashboard] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6a653b4a
+2025-08-17T16:56:01.416+05:30  INFO 14072 --- [02_dashboard] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2025-08-17T16:56:01.417+05:30  WARN 14072 --- [02_dashboard] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-17T16:56:01.417+05:30  WARN 14072 --- [02_dashboard] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-08-17T16:56:01.418+05:30  INFO 14072 --- [02_dashboard] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-3)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-17T16:56:01.439+05:30  INFO 14072 --- [02_dashboard] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-17T16:56:01.445+05:30  INFO 14072 --- [02_dashboard] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-17T16:56:01.506+05:30  WARN 14072 --- [02_dashboard] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-17T16:56:01.612+05:30  WARN 14072 --- [02_dashboard] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-08-17T16:56:01.841+05:30  INFO 14072 --- [02_dashboard] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-08-17T16:56:01.850+05:30  WARN 14072 --- [02_dashboard] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-08-17T16:56:01.864+05:30  INFO 14072 --- [02_dashboard] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-08-17T16:56:01.865+05:30  INFO 14072 --- [02_dashboard] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-08-17T16:56:01.866+05:30  INFO 14072 --- [02_dashboard] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-17T16:56:01.866+05:30  INFO 14072 --- [02_dashboard] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-08-17T16:56:01.866+05:30  INFO 14072 --- [02_dashboard] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-08-17T16:56:01.866+05:30  INFO 14072 --- [02_dashboard] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-08-17T16:56:01.866+05:30  INFO 14072 --- [02_dashboard] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-08-17T16:56:01.866+05:30  INFO 14072 --- [02_dashboard] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-08-17T16:56:01.866+05:30  INFO 14072 --- [02_dashboard] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-08-17T16:56:01.866+05:30  INFO 14072 --- [02_dashboard] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-08-17T16:56:01.887+05:30  INFO 14072 --- [02_dashboard] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-08-17T16:56:01.887+05:30  INFO 14072 --- [02_dashboard] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-08-17T16:56:01.888+05:30  INFO 14072 --- [02_dashboard] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-08-17T16:56:01.888+05:30  INFO 14072 --- [02_dashboard] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1755429961888 with initial instances count: 2
+2025-08-17T16:56:01.889+05:30  INFO 14072 --- [02_dashboard] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application 02_DASHBOARD with eureka with status UP
+2025-08-17T16:56:01.889+05:30  INFO 14072 --- [02_dashboard] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1755429961889, current=UP, previous=STARTING]
+2025-08-17T16:56:01.889+05:30  INFO 14072 --- [02_dashboard] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_02_DASHBOARD/anubhav:02_dashboard:7979: registering service...
+2025-08-17T16:56:01.893+05:30  INFO 14072 --- [02_dashboard] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 7979 (http) with context path '/'
+2025-08-17T16:56:01.894+05:30  INFO 14072 --- [02_dashboard] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 7979
+2025-08-17T16:56:01.902+05:30  INFO 14072 --- [02_dashboard] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_02_DASHBOARD/anubhav:02_dashboard:7979 - registration status: 204
+2025-08-17T16:56:01.996+05:30  INFO 14072 --- [02_dashboard] [restartedMain] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-user_data-3
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = user_data
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metadata.recovery.strategy = none
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.header.urlencode = false
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2025-08-17T16:56:01.996+05:30  INFO 14072 --- [02_dashboard] [restartedMain] o.a.k.c.t.i.KafkaMetricsCollector        : initializing Kafka metrics collector
+2025-08-17T16:56:01.998+05:30  INFO 14072 --- [02_dashboard] [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.9.1
+2025-08-17T16:56:02.000+05:30  INFO 14072 --- [02_dashboard] [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: f745dfdcee2b9851
+2025-08-17T16:56:02.000+05:30  INFO 14072 --- [02_dashboard] [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1755429961998
+2025-08-17T16:56:02.000+05:30  INFO 14072 --- [02_dashboard] [restartedMain] o.a.k.c.c.i.ClassicKafkaConsumer         : [Consumer clientId=consumer-user_data-3, groupId=user_data] Subscribed to topic(s): user_data_topic
+2025-08-17T16:56:02.003+05:30  INFO 14072 --- [02_dashboard] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-user_data-3, groupId=user_data] Cluster ID: pLVloZ-5Rhi_yrydecqw4A
+2025-08-17T16:56:02.003+05:30  INFO 14072 --- [02_dashboard] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-user_data-3, groupId=user_data] Discovered group coordinator anubhav:9092 (id: 2147483647 rack: null)
+2025-08-17T16:56:02.004+05:30  INFO 14072 --- [02_dashboard] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-user_data-3, groupId=user_data] (Re-)joining group
+2025-08-17T16:56:02.004+05:30  INFO 14072 --- [02_dashboard] [restartedMain] in.anubhav.Application                   : Started Application in 2.005 seconds (process running for 383.855)
+2025-08-17T16:56:02.006+05:30  INFO 14072 --- [02_dashboard] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-08-17T16:56:02.007+05:30  INFO 14072 --- [02_dashboard] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-user_data-3, groupId=user_data] Request joining group due to: need to re-join with the given member-id: consumer-user_data-3-e242e8e2-553b-412e-a3ff-3245d4eb5161
+2025-08-17T16:56:02.007+05:30  INFO 14072 --- [02_dashboard] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-user_data-3, groupId=user_data] (Re-)joining group
+2025-08-17T16:56:02.009+05:30  INFO 14072 --- [02_dashboard] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-user_data-3, groupId=user_data] Successfully joined group with generation Generation{generationId=9, memberId='consumer-user_data-3-e242e8e2-553b-412e-a3ff-3245d4eb5161', protocol='range'}
+2025-08-17T16:56:02.010+05:30  INFO 14072 --- [02_dashboard] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-user_data-3, groupId=user_data] Finished assignment for group at generation 9: {consumer-user_data-3-e242e8e2-553b-412e-a3ff-3245d4eb5161=Assignment(partitions=[user_data_topic-0])}
+2025-08-17T16:56:02.013+05:30  INFO 14072 --- [02_dashboard] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-user_data-3, groupId=user_data] Successfully synced group in generation Generation{generationId=9, memberId='consumer-user_data-3-e242e8e2-553b-412e-a3ff-3245d4eb5161', protocol='range'}
+2025-08-17T16:56:02.013+05:30  INFO 14072 --- [02_dashboard] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-user_data-3, groupId=user_data] Notifying assignor about the new Assignment(partitions=[user_data_topic-0])
+2025-08-17T16:56:02.013+05:30  INFO 14072 --- [02_dashboard] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] k.c.c.i.ConsumerRebalanceListenerInvoker : [Consumer clientId=consumer-user_data-3, groupId=user_data] Adding newly assigned partitions: user_data_topic-0
+2025-08-17T16:56:02.015+05:30  INFO 14072 --- [02_dashboard] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerUtils        : Setting offset for partition user_data_topic-0 to the committed offset FetchPosition{offset=2, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[anubhav:9092 (id: 0 rack: null)], epoch=0}}
+2025-08-17T16:56:02.015+05:30  INFO 14072 --- [02_dashboard] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : user_data: partitions assigned: [user_data_topic-0]
+2025-08-17T16:56:02.069+05:30  INFO 14072 --- [02_dashboard] [RMI TCP Connection(16)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-08-17T16:56:02.071+05:30  INFO 14072 --- [02_dashboard] [RMI TCP Connection(16)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application 02_DASHBOARD with eureka with status DOWN
+2025-08-17T16:56:02.071+05:30  INFO 14072 --- [02_dashboard] [RMI TCP Connection(16)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1755429962071, current=DOWN, previous=UP]
+2025-08-17T16:56:02.071+05:30  INFO 14072 --- [02_dashboard] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_02_DASHBOARD/anubhav:02_dashboard:7979: registering service...
+2025-08-17T16:56:02.073+05:30  INFO 14072 --- [02_dashboard] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] k.c.c.i.ConsumerRebalanceListenerInvoker : [Consumer clientId=consumer-user_data-3, groupId=user_data] Revoke previously assigned partitions user_data_topic-0
+2025-08-17T16:56:02.073+05:30  INFO 14072 --- [02_dashboard] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : user_data: partitions revoked: [user_data_topic-0]
+2025-08-17T16:56:02.073+05:30  INFO 14072 --- [02_dashboard] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-user_data-3, groupId=user_data] Member consumer-user_data-3-e242e8e2-553b-412e-a3ff-3245d4eb5161 sending LeaveGroup request to coordinator anubhav:9092 (id: 2147483647 rack: null) due to the consumer unsubscribed from all topics
+2025-08-17T16:56:02.073+05:30  INFO 14072 --- [02_dashboard] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-user_data-3, groupId=user_data] Resetting generation and member id due to: consumer pro-actively leaving the group
+2025-08-17T16:56:02.073+05:30  INFO 14072 --- [02_dashboard] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-user_data-3, groupId=user_data] Request joining group due to: consumer pro-actively leaving the group
+2025-08-17T16:56:02.073+05:30  INFO 14072 --- [02_dashboard] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.ClassicKafkaConsumer         : [Consumer clientId=consumer-user_data-3, groupId=user_data] Unsubscribed all topics or patterns and assigned partitions
+2025-08-17T16:56:02.074+05:30  INFO 14072 --- [02_dashboard] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-user_data-3, groupId=user_data] Resetting generation and member id due to: consumer pro-actively leaving the group
+2025-08-17T16:56:02.074+05:30  INFO 14072 --- [02_dashboard] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-user_data-3, groupId=user_data] Request joining group due to: consumer pro-actively leaving the group
+2025-08-17T16:56:02.076+05:30  INFO 14072 --- [02_dashboard] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_02_DASHBOARD/anubhav:02_dashboard:7979 - registration status: 204
+2025-08-17T16:56:02.521+05:30  INFO 14072 --- [02_dashboard] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.kafka.clients.FetchSessionHandler    : [Consumer clientId=consumer-user_data-3, groupId=user_data] Node 0 sent an invalid full fetch response with extraIds=(NF1z_xNfRhu5kYCo8AhPcA), response=()
+2025-08-17T16:56:02.522+05:30  INFO 14072 --- [02_dashboard] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
+2025-08-17T16:56:02.523+05:30  INFO 14072 --- [02_dashboard] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-08-17T16:56:02.523+05:30  INFO 14072 --- [02_dashboard] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+2025-08-17T16:56:02.523+05:30  INFO 14072 --- [02_dashboard] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
+2025-08-17T16:56:02.528+05:30  INFO 14072 --- [02_dashboard] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.kafka.common.utils.AppInfoParser     : App info kafka.consumer for consumer-user_data-3 unregistered
+2025-08-17T16:56:02.529+05:30  INFO 14072 --- [02_dashboard] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : user_data: Consumer stopped
+2025-08-17T16:56:02.529+05:30  INFO 14072 --- [02_dashboard] [RMI TCP Connection(16)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-17T16:56:02.586+05:30  INFO 14072 --- [02_dashboard] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-17T16:56:02.590+05:30  INFO 14072 --- [02_dashboard] [RMI TCP Connection(16)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-17T16:56:02.590+05:30  INFO 14072 --- [02_dashboard] [RMI TCP Connection(16)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2025-08-17T16:56:02.596+05:30  INFO 14072 --- [02_dashboard] [RMI TCP Connection(16)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2025-08-17T16:56:02.597+05:30  INFO 14072 --- [02_dashboard] [RMI TCP Connection(16)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-08-17T16:56:05.598+05:30  INFO 14072 --- [02_dashboard] [RMI TCP Connection(16)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-08-17T16:56:05.604+05:30  INFO 14072 --- [02_dashboard] [RMI TCP Connection(16)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_02_DASHBOARD/anubhav:02_dashboard:7979 - deregister  status: 200
+2025-08-17T16:56:05.605+05:30  INFO 14072 --- [02_dashboard] [RMI TCP Connection(16)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient

@@ -1,0 +1,5 @@
+package in.anubhav.service.impl;
+
+public class UserDetailServiceImpl {
+
+}

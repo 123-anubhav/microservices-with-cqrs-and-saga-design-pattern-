@@ -1,0 +1,23 @@
+package in.anubhav.service.impl;
+
+import java.util.List;
+
+import in.anubhav.dto.UserDetails;
+import in.anubhav.service.IUserService;
+
+public class UserDetailServiceImpl implements IUserService {
+
+	private IUser
+	@Override
+	public UserDetails addUser(UserDetails user) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<UserDetails> fetchAllRecord() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

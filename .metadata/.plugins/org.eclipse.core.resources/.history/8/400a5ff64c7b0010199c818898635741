@@ -1,0 +1,20 @@
+package in.anubhav;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+import org.springframework.context.ConfigurableApplicationContext;
+
+import in.anubhav.service.IUserService;
+
+@SpringBootApplication
+@EnableDiscoveryClient
+public class Application {
+
+	public static void main(String[] args) {
+		ConfigurableApplicationContext run = SpringApplication.run(Application.class, args);
+		IUserService bean = run.getBean(IUserService.class);
+		System.out.println("IUserService ======" + bean.toString());
+	}
+
+}

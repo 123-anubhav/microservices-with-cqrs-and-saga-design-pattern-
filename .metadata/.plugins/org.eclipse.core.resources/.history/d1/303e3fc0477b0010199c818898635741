@@ -1,0 +1,31 @@
+package in.anubhav.service.impl;
+
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import in.anubhav.dto.UserDetailsDto;
+import in.anubhav.jpa.IUserDetails;
+import in.anubhav.service.IUserService;
+
+@Service
+public class UserDetailServiceImpl implements IUserService {
+
+	private IUserDetails userDetail;
+
+	public UserDetailServiceImpl(IUserDetails userDetail) {
+		super();
+		this.userDetail = userDetail;
+	}
+
+	@Override
+	public UserDetailsDto addUser(UserDetailsDto user) {
+		return userDetail.save(user);
+	}
+
+	@Override
+	public List<UserDetailsDto> fetchAllRecord() {
+		return userDetail.findAll();
+	}
+
+}
