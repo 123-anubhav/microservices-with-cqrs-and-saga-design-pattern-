@@ -151,5 +151,3 @@ Kafka acts as the **message broker** to connect microservices asynchronously.
 ✨ This architecture ensures **data consistency** across distributed microservices using **CQRS + Saga Choreography + Kafka** while keeping services autonomous and event-driven.
 
 ---
-
-Do you want me to also **add a Mermaid sequence diagram** (Kafka event flow: Vessel App → Kafka → Dashboard) inside this `README.md` so it looks even more visual and GitHub-friendly?
