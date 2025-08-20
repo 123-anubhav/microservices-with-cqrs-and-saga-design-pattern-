@@ -2,6 +2,9 @@
 cqrs and saga design pattern implemented microservice for data consistency. in this saga choreography used and each microservice has its won db per service , how to data async between 2 microservervice db, used cqrs for command and query responsibility segration. in every microservices data consistency is common scenario to manage this used cqrs
 
 ---
+![cqrs](./project%20scenario%20real%20time%20use%20case.png)
+---
+---
 we have **two microservices** (`01-vessel-app` and `02-dashboard`), both registered in **Eureka**, and you’re using **Kafka as the Pub/Sub tool** with **topics** for communication (`vessel-app` → publish events, `dashboard` → consume events using `@KafkaListener`).
 ---
 ---
